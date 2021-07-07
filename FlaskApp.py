@@ -10,10 +10,10 @@ import pickle
 from flask import Flask, request, render_template
 
 app = Flask(__name__)
-classifier_pkl_in = open("./fish-classification/classifier.pkl", "rb")
+classifier_pkl_in = open("./static/classifier.pkl", "rb")
 classifier = pickle.load(classifier_pkl_in)
 
-scaler_pkl_in = open("./fish-classification/standardscaler.pkl", "rb")
+scaler_pkl_in = open("./static/standardscaler.pkl", "rb")
 sc = pickle.load(scaler_pkl_in)
 
 
